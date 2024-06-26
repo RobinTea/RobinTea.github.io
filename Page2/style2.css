@@ -154,7 +154,7 @@ footer {
     
     .container {
         display: grid;
-        grid-template-rows: 60px 25px 95% 800px 75% 150px;
+        grid-template-rows: 60px 25px 95% 900px 75% 150px;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-areas: 
             "header header header"
