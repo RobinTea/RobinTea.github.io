@@ -104,6 +104,11 @@ header {
     padding: 100px;
 }
 
+.pain {
+    text-decoration: none;
+    color: #000;
+}
+
 footer {
     grid-area: footer;
     background-color: #b0ac94;
@@ -146,7 +151,7 @@ footer {
     
     .container {
         display: grid;
-        grid-template-rows: 60px 25px 95% 800px 50% 150px;
+        grid-template-rows: 60px 25px 95% 950px 50% 150px;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-areas: 
             "header header header"
@@ -215,8 +220,8 @@ footer {
         display: flex;
         justify-content: center;
         align-items: center;
-        overflow-y: hidden;
-        padding: 100px;
+        overflow: hidden;
+        padding: 80px;
     }
     
     footer {

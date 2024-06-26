@@ -103,6 +103,11 @@ header {
     padding: 100px;
 }
 
+.pain {
+    text-decoration: none;
+    color: #000;
+}
+
 .linkss {
     font-style: italic ;
     text-decoration: none;
