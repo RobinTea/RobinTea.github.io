@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@font-face{
+    font-family: 'test';
+    font-weight: 500;
+    src: url('../font/test.otf') format('opentype');
+}
+
+body {
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+    overflow: hidden;
+    min-width: 200px;
+}
+
+.yes {
+    font-family: 'test', sans-serif;
+    font-size: 300%;
+    letter-spacing: -0.2em;
+    text-align: center;
+    color: #5a5a5acb;
+    text-decoration: none;
+}
+/*#5f0317*/
+
+.yes:hover {
+    color: rgb(209, 4, 4);
+}
+
+.container {
+    display: grid;
+    grid-template-rows: 60px 25px 95% 75% 300px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+        "header header header"
+        "menubar menubar menubar"
+        "content content content"
+        "lorem lorem lorem"
+        "footer footer footer";
+    height: 100vh;
+    overflow-y: auto;
+}
+
+header {
+    grid-area: header;
+    background-color: #3F4E4F;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menubar {
+    grid-area: menubar;
+    background-color: #a27b5c;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.menubar a:hover {
+    background-color: #694f3a;
+}
+
+.menubar a {
+    color: #DCD7C9;
+    text-decoration: none;
+    flex: 1;
+    text-align: center;
+    transition: background-color 0.2s ease-in-out !important;
+}
+
+.content {
+    grid-area: content;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-y: auto;
+}
+
+.aside {
+    grid-column: 3 / 4;
+    grid-row: 4 / 5;
+    display: flex;
+    background-color: rgb(61, 61, 61);
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.whythepain {
+    width: auto;
+    height: 100%;
+}
+
+.lorem {
+    grid-column: 1 / 3;
+    grid-row: 4 / 5;
+    /*grid-area: lorem;*/
+    background-color: rgb(201, 170, 142);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow-y: hidden;
+    padding: 100px;
+    text-decoration: none;
+}
+
+.pain {
+    text-decoration: none;
+    color: #000;
+}
+
+.title {
+    font-family: 'test', sans-serif;
+    padding: 3%;
+    top: 100px;
+    color: #880000;
+}
+
+footer {
+    grid-area: footer;
+    background-color: rgb(180, 180, 180);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content img {
+    max-width: 100%;
+    height: auto;
+    width: 100%;
+    height: 100%;
+}
+
+.fan {
+    position: relative;
+    width: 250px;
+    height: 400px; 
+    transition: 0.3s ease;
+}
+
+.fan:hover {
+    transform: scale(1.15) !important;
+}
+
+@media (max-width: 1090px) {
+    body {
+        margin: 0;
+        font-family: "Montserrat", sans-serif;
+        overflow: auto;
+        background-color: #3F4E4F;
+    }
+    
+    .container {
+        display: grid;
+        grid-template-rows: 60px 25px 95% 900px 75% 150px;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas: 
+            "header header header"
+            "menubar menubar menubar"
+            "content content content"
+            "lorem lorem lorem"
+            "so so so"
+            "footer footer footer";
+        height: 100vh;
+        overflow-y: auto;
+    }
+    
+    header {
+        grid-area: header;
+        background-color: #3F4E4F;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+      
+    .aside {
+        grid-area: so;
+        display: flex;
+        background-color: rgb(61, 61, 61);
+        justify-content: center;
+        align-items: center;
+        z-index: 1;
+        margin-left: 70px;
+        margin-right: 70px;
+    }
+    
+    .lorem {
+        grid-column: 1 / 4;
+        grid-row: 4 / 5;
+        /*grid-area: lorem;*/
+        background-color: rgb(201, 170, 142);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow-y: hidden;
+        padding: 100px;
+    }
+    
+    .title {
+        font-family: 'test', sans-serif;
+        padding: 3%;
+        top: 100px;
+        color: #880000;
+    }
+
+    footer {
+        grid-column: 1 / 4;
+        grid-row: 6 / 7;
+        background-color: lightgrey;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .content img {
+        max-width: 100%;
+        height: auto;
+        width: 100%;
+        height: 100%;
+    }
+    
+    .fan {
+        position: relative;
+        width: 250px;
+        height: 400px; 
+        transition: 0.3s ease;
+    }
+    
+    .fan:hover {
+        transform: scale(1.15) !important;
+    }
+    
+}
